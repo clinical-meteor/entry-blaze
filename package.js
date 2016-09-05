@@ -10,7 +10,12 @@ Package.onUse(function (api) {
   api.versionsFrom('1.1.0.3');
 
   api.use([
-    'clinical:entry'
+    'clinical:entry',
+    'meteor-platform',
+    'templating',
+    'clinical:router@2.0.17',
+    'grove:less@0.1.1',
+    'session'
   ]);
 
   api.imply('clinical:entry');
